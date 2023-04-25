@@ -6,6 +6,7 @@ on:
       - main # Change this to the branch you want to trigger the workflow
 
 jobs:
-  build:
+  call_deploy_workflow:
     uses: bhanuduggal/aws_python_tool_template/.github/workflows/deploy.yml@main
-
+    secrets:
+      # Pass any required secrets here
