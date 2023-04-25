@@ -8,5 +8,3 @@ on:
 jobs:
   call_deploy_workflow:
     uses: bhanuduggal/aws_python_tool_template/.github/workflows/deploy.yml@main
-    secrets:
-      # Pass any required secrets here
