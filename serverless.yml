@@ -13,7 +13,7 @@ package:
   individually: true
 
 functions:
-  theLambda:
+  NG_LAMBDA_1:
     name: national-grid-test-api
     handler: pingng.pingng.lambda_handler
     description: sample_lambda
