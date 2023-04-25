@@ -1,4 +1,4 @@
-service: basic-serverless-lambda-python
+service: ping-ng-apis
 
 provider:
   name: aws
@@ -15,8 +15,8 @@ package:
 functions:
   theLambda:
     name: national-grid-test-api
-    handler: tool_name.tool_name.lambda_handler
-    description: test-lambda
+    handler: pingng.pingng.lambda_handler
+    description: sample_lambda
     timeout: 5 # seconds
     memorySize: 128 # mb
     package:
