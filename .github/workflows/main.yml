@@ -6,30 +6,6 @@ on:
       - main # Change this to the branch you want to trigger the workflow
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout current repository
-      uses: actions/checkout@v2
-      with:
-        path: current-repo
-
-    - name: Checkout external repository
-      uses: actions/checkout@v2
-      with:
-        repository: bhanuduggal/aws_python_tool_template # Replace with the username and repository name containing the deploy.yml file
-        path: external-repo
-
-    - name: Copy deploy.yml file
-      run: |
-        cp external-repo/deploy.yml current-repo/
-        
-    - name: Deploy
-      working-directory: current-repo
-      run: |
-        # Add any prerequisites, environment setup, or tools needed to run the deploy.yml file
-        # For example, if you need to install some dependencies, you can do that here
-        # Then, execute the deploy.yml file using the appropriate tool, for example:
-        ansible-playbook deploy.yml
+  build:
+    uses: bhanuduggal/aws_python_tool_template/.github/workflows/deploy.yml@main
 
