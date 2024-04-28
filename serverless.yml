@@ -13,15 +13,15 @@ package:
   individually: true
 
 functions:
-  NG_LAMBDA_1:
-    name: national-grid-test-api
-    handler: pingng.pingng.lambda_handler
-    description: sample_lambda
-    timeout: 5 # seconds
-    memorySize: 128 # mb
-    package:
-      patterns:
-        - "!node_modules/**"
-        - "!yarn.lock"
-        - "!package-lock.json"
-        - "!package.json"
+  # NG_LAMBDA_1:
+  #   name: national-grid-test-api
+  #   handler: pingng.pingng.lambda_handler
+  #   description: sample_lambda
+  #   timeout: 5 # seconds
+  #   memorySize: 128 # mb
+  #   package:
+  #     patterns:
+  #       - "!node_modules/**"
+  #       - "!yarn.lock"
+  #       - "!package-lock.json"
+  #       - "!package.json"
